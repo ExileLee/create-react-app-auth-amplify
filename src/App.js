@@ -16,7 +16,7 @@ class App extends Component {
         baseURL: apiBaseUrl
     });
 
-    api.get("artists/the-1975")
+    api.get("test")
       .then(x => {
         console.log(x.data);
       })
