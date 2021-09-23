@@ -16,7 +16,7 @@ class App extends Component {
         baseURL: apiBaseUrl
     });
 
-    api.get("test")
+    api.get("test", {withCredentials: true})
       .then(x => {
         console.log(x.data);
       })
