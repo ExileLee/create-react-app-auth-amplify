@@ -16,10 +16,14 @@ class App extends Component {
         baseURL: apiBaseUrl
     });
 
-    api.get("cookies", {withCredentials: true})
+    api.get("cookies", {withCredentials: true, credentials: 'include'})
       .then(x => {
         console.log(x.data);
       })
+
+    function setCookie() {
+      
+    }
 
     return (
       <div className="App">
